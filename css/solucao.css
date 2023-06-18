@@ -304,6 +304,39 @@ body{
     width: 100%;
 }
 
+.beneficio2{
+    box-shadow: 0.2rem 0.2rem 2rem var(--cor-principal);
+    border-radius: 1rem;
+    padding: 7rem 1rem 1rem 1rem;
+    max-width: 30rem;
+    color: var(--cor-branco);
+    background: var(--cor-principal);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: left;
+    text-align: left;
+    position: relative;
+    min-height: 26rem;
+}
+
+.beneficio2 span{
+    width: 70%;
+    height: 0.3rem;
+    background: var(--cor-branco);
+    border-radius: 1rem;
+    align-items: center;
+    text-align: center;
+    margin:auto; 
+    display:table;
+}
+
+.beneficio2 h2 {
+    text-align: center;
+}
+
+
 .topicos{
     min-width: 80rem;
     padding: 2rem;
