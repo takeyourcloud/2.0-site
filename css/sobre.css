@@ -10,6 +10,7 @@
     border-collapse: collapse;
 }
 
+
 html{
     font-size: 62.5%;
 }
@@ -181,7 +182,7 @@ body{
 
 /* Container Home - Início */
 
-.container{
+/* .container{
     width: 100%;
     padding: 2rem 0;
 }
@@ -194,6 +195,48 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+
+.container-sobre{
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.container-sobre>div{
+    padding: 2rem 0;
+    min-height: 92vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-pilares{
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #edeff0;
+}
+
+.container-pilares>div{
+    padding: 2rem 0;
+    /* min-height: 92vh; */
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+.container-pilares>div>p{
+    text-align: center;
+    max-width: 60rem;
+}
+
+.container-pilares>div>h1{
+    text-align: center;
 }
 
 .sobre{
@@ -205,9 +248,9 @@ body{
     gap: 1rem;
 }
 
-.sobre h1{
+/* .sobre h1{
     font-size: 5rem;
-}
+} */
 
 .sobre p{
     text-align: justify;
@@ -219,6 +262,45 @@ body{
     color: var(--cor-secundaria);
 }
 
+.pilares {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    padding: 7rem 0;
+    justify-content: center;
+}
+
+.pilar {
+    box-shadow: 0.2rem 0.2rem 2rem var(--cor-principal);
+    border-radius: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
+    max-width: 30rem;
+    color: var(--cor-branco);
+    background: var(--cor-principal);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    min-height: 26rem;
+    justify-content: space-evenly;
+}
+
+.pilar span{
+    width: 100%;
+    height: 0.3rem;
+    background: var(--cor-branco);
+    border-radius: 1rem;
+    align-items: center;
+    text-align: center;
+    display:table;
+}
+
+.pilar h2 {
+    text-align: center;
+}
 
 /* Rodapé - Início */
 
@@ -295,6 +377,29 @@ body{
     width: 10rem;
 }
 
+.rodape-menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    position: relative;
+    left: 10%;
+}
+
+.rodape-menu ul li {
+    list-style-type: circle;
+    color: var(--cor-branco);
+}
+
+.rodape-menu p {
+    padding: 2px;
+}
+
+.rodape-menu a {
+    color: var(--cor-branco);
+    transition: .3s;
+    display: inline-block;
+}
+
 /* Rodapé - Fim */
 
 @media(max-width: 950px){
@@ -326,5 +431,10 @@ body{
     .rodape>div a{
         width: 100%;
         text-align: center;
+    }
+
+    .rodape-menu ul li a {
+        width: 100%;
+        text-align: left;
     }
 }
