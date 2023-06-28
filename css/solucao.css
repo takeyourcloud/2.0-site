@@ -414,6 +414,10 @@ body{
     color: var(--cor-principal);
 }
 
+.informacoes a {
+    color: inherit;
+}
+
 /* Rodapé - Início */
 
 .rodape{
